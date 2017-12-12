@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Colorado State University</title>
+	<!--meta tags-->
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Colorado State University">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--style elements-->
+	<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+		integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+		crossorigin="anonymous">
+	<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<header class="container-fluid">
+		<a href="#"><img src="images/csu-logo-top.png" alt="CSU Logo"></a>
+		<a href="#"><h1>Colorado State University</h1></a>
+	</header>
+
+	<nav id="top-nav" class="navbar navbar-custom navbar-expand-lg navbar-light">
+
+		<button type="button" class="navbar-toggler navbar-toggler-custom"
+			data-toggle="collapse" data-target="#navbar-csu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbar-csu">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link nav-link-custom nav-link-hover pr-4"
+						href="#">Admissions</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link-custom nav-link-hover pr-4"
+						href="#">Academics</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link-custom nav-link-hover pr-4"
+						href="#">Research</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link-custom nav-link-hover pr-4"
+						href="#">Athletics</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link-custom nav-link-hover pr-4"
+						href="#">Alumni</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link-custom nav-link-hover pr-4"
+						href="#">Give</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link-custom nav-link-hover pr-4"
+						href="#">Engagement</a>
+				</li>
+			</ul>
+
+			<a class="nav-link nav-link-custom pr-0" href="#">Resources</a>
+			<a class="nav-link nav-link-custom" href="#">
+				<i class="fa fa-search fa-lg pr-3" aria-hidden="true"></i>
+			</a>
+		</div>
+
+	</nav>
+
+	<main>
+
+		<section class="container-fluid" id="main">
+			<div class="row">
+				<div class="col-md-4 explore">
+					<h2>Explore</h2>
+					<button type="button" class="btn btn-default btn-filter" id="btn-systems">Computer Info Systems</button>
+					<button type="button" class="btn btn-default btn-filter" id="btn-science">Computer Science</button>
+					<button type="button" class="btn btn-default btn-filter" id="btn-technology">Computing Technology</button>
+					<hr>
+					<button type="button" class="btn btn-default btn-filter" id="btn-lower">Lower Division</button>
+					<button type="button" class="btn btn-default btn-filter" id="btn-upper">Upper Division</button>
+					<hr>
+					<button type="button" class="btn btn-default" id="btn-reset">Reset</button>
+				</div>
+
+				<div class="col-md-8">
+
+					<table class="table table-custom table-striped">
+						<thead>
+							<tr>
+								<th>Course Prefix & Number</th>
+								<th>Course Title</th>
+							</tr>
+						</thead>
+						<tbody id="table-body"></tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<ul>
+					<li><a href="#">Contact CSU</a></li>
+					<li><a href="#">Equal Opportunity</a></li>
+					<li><a href="#">Privacy Statement</a></li>
+					<li><a href="#">Disclaimer</a></li>
+				</ul>
+				<span>&copy; 2017 Colorado State University, Fort Collins, Colorado 80523 USA</span>
+			</div>
+			<div class="col-md-6">
+				<a href="#"><img src="images/csu-logo-bottom.png" class="img-responsive" alt="CSU Logo"></a>
+			</div>
+		</div>
+	</footer>
+
+	<!--script elements-->
+
+	<script src="classes.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+		integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+		integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+		crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+/************************************************
+green #004c23
+gold #ccc46e
+orange #ec7100
+
+GLOBAL
+************************************************/
+
+@font-face {
+    font-family: factoria;
+    src: url(fonts/factoria.otf);
+}
+
+@font-face {
+    font-family: proxima;
+    src: url(fonts/proxima.ttf);
+}
+
+@font-face {
+    font-family: vitesse;
+    src: url(fonts/vitesse.otf);
+}
+
+body { max-width: 1280px; }
+
+/************************************************
+HEADER
+************************************************/
+
+header {
+    background-color: #004c23;
+    height: 90px;
+    padding-top: 15px;
+}
+
+header img {
+    height: 60px;
+    width: 60px;
+}
+
+header h1 {
+    color: #fff;
+    display: inline-block;
+    font-family: vitesse, sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0 0 0 5px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+/************************************************
+NAVIGATION
+************************************************/
+
+#top-nav {
+    background-color: #fff;
+    border-bottom: 3px solid #ccc46e;
+}
+
+.navbar-custom {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-toggler-custom {
+    margin-top: .5rem !important;
+    margin-bottom: .5rem !important;
+}
+
+.nav-link-custom {
+    padding: 1.1rem 1rem !important;
+    font-family: proxima, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #004c23 !important;
+}
+
+.nav-link-hover:hover {
+    background-color: #eee;
+    color: #ec6923 !important;
+}
+
+/************************************************
+EXPLORE
+************************************************/
+
+section#main h2 {
+    color: #ec7100;
+    display: block;
+    font-family: factoria, sans-serif;
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 2rem 0;
+    text-align:center;
+}
+
+section#main button {
+    background-color: #fff;
+    border: 2px solid #004c23;
+    border-radius: 0;
+    color: #004c23;
+    display: block;
+    font-family: factoria, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+    white-space: normal !important;
+    width: 75%;
+}
+
+section#main button:hover {
+    background-color: #ec7100;
+    border: 2px solid #ec7100;
+    color: #fff;
+}
+
+section#main hr {
+    border: 1px solid #ec7100;
+    border-width: 1px;
+    width: 85%;
+}
+
+.btn-clicked {
+    background-color: #ec7100 !important;
+    border: 2px solid #ec7100 !important;
+    color: #fff !important;
+}
+
+/************************************************
+TABLE
+************************************************/
+
+table { margin: 2rem 0; }
+
+.table-custom th, .table-custom td {
+    border: none;
+    font-size: .8rem;
+}
+
+/************************************************
+FOOTER
+************************************************/
+
+footer {
+    background-color: #004c23;
+    color: #fff;
+    font-family: proxima, sans-serif;
+    font-size: .9rem;
+    margin-top: 3.5rem;
+    text-align: center;
+}
+
+footer ul {
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+footer li {
+    border-right: 1px solid #fff;
+    display: inline;
+    padding: 0 10px;
+}
+
+footer li:first-child { padding-left: 0; }
+
+footer li:last-child { border: none; }
+
+footer a { color: #fff; }
+
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer span { display: block; }
+
+/************************************************
+MEDIA QUERIES
+************************************************/
+
+@media (min-width: 768px) {
+
+    header h1, section#main button { font-size: 1.4rem; }
+
+    section#main h2 { font-size: 4rem; }
+
+    footer { text-align: left; }
+
+    footer ul, footer span { padding: 0 0 .5em 2rem; }
+
+    footer img {
+        float: right;
+        padding-right: 2rem;
+    }
+
+}
